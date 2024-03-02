@@ -32,7 +32,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: ./gradlew generateMeta clean
       - name: Start SSH via ngrok
-        uses: P3TERX/ssh2actions@main
+        uses: aryankaran/ssh2actions@main
         with:
           mode: ngrok
         env:
